@@ -60,5 +60,5 @@ typings/
 # next.js build output
 .next
 
-# package-lock file since it just causes vulnerability
+# package-lock file since it just causes vulnerability's
 package-lock.json
