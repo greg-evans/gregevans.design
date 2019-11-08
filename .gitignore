@@ -62,3 +62,4 @@ typings/
 
 # all the JSON — because of the dependency issues
 *.json
+package-lock.json
