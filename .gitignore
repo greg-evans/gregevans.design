@@ -60,5 +60,5 @@ typings/
 # next.js build output
 .next
 
-# all the JSON
+# all the JSON — because of the dependency issues
 *.json
