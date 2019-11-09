@@ -65,3 +65,13 @@ package-lock.json
 
 # apple stuff
 *.DS_Store
+
+# markdown
+*.md
+
+# Grunt
+Gruntfile.js
+
+# ya mate jason
+package.json
+
