@@ -62,3 +62,6 @@ typings/
 
 # package-lock file since it just causes vulnerability's
 package-lock.json
+
+# apple stuff
+*.DS_Store
