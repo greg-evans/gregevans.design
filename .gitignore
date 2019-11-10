@@ -66,9 +66,6 @@ package-lock.json
 # apple stuff
 *.DS_Store
 
-# markdown
-*.md
-
 # Grunt
 Gruntfile.js
 
