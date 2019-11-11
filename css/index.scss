@@ -454,6 +454,11 @@ body.overlay-open {
     transform: translateY(-1rem);
   }
 
+  60% {
+    opacity: 0;
+    transform: translateY(.6rem);
+  }
+
   100% {
     opacity: 1;
     transform: translateY(0rem);

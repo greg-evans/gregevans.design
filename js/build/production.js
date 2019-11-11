@@ -10430,7 +10430,8 @@ switchContainer.on('click', function() {
   var overlay      = $('.overlay');
   var overlayWork      = $('.overlay-work');
   var body         = $('html');
-  var link         = $('li');
+  var link         = $('a');
+  var detail         = $('li');
   var para         = $('p');
   var face         = $('.me-face');
   var boney         = $('.boney');
@@ -10447,6 +10448,7 @@ switchContainer.on('click', function() {
   body.toggleClass('night-mode');
   body.toggleClass('night-mode-text');
   link.toggleClass('night-mode-text');
+  detail.toggleClass('night-mode-text');
   para.toggleClass('night-mode-text');
   face.toggleClass('face-gone');
   boney.toggleClass('face-gone');
