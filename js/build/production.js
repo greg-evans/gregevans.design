@@ -10430,7 +10430,7 @@ switchContainer.on('click', function() {
   var overlay      = $('.overlay');
   var overlayWork      = $('.overlay-work');
   var body         = $('html');
-  var link         = $('.animate-reveal');
+  var link         = $('li');
   var para         = $('p');
   var face         = $('.me-face');
   var boney         = $('.boney');

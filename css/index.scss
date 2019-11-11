@@ -24,7 +24,6 @@ html {
   background: #000;
   width: 100%;
   height: 100%;
-  //min-height: 100%;
   margin: 0;
   padding: 0;
   transition: opacity 300ms, visibility 300ms, background-color 500ms;
@@ -37,8 +36,6 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
- // height: 100%;
- // min-height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #eee;
@@ -138,6 +135,10 @@ body {
       color: pink;
       transition: color .5s;
     }
+  }
+  > span {
+    color: pink !important;
+    transition: color .5s;
   }
 }
 
@@ -356,12 +357,10 @@ body.overlay-open {
   width: 400px;
   height: 400px;
   position: absolute;
-  right: 2rem;
-  bottom: 0;
-  //background-color: rgba(238, 238, 238, 0.445);
+  right: 2.3rem;
+  bottom: 0.1rem;
   background-image: url("/Users/gregoryevans/Google Drive/Mothership/GREG IS BONEY/Greg-is-boney CURRENT WORKING NOVEMBER 19/images/Boney-lines.svg");
   opacity: 0;
-  
 }
 .lightface-on {
   opacity: 1;
@@ -417,35 +416,83 @@ body.overlay-open {
   }
 }
 
-.animate-reveal {
-  animation: reveal 300ms cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+.menu li {
+  display: inline-block;
+  animation-name: reveal;
+  animation-duration: 700ms;
+  animation-iteration-count: 1;
+  transition-timing-function: ease-out;
 }
 
+.menu li:nth-child(1)  {
+  animation-name: reveal;
+  animation-delay: 0s;
+}
+
+.menu li:nth-child(2)  {
+  animation-name: reveal;
+  animation-delay: 100ms;
+  margin-left: .5rem;
+}
+
+.menu li:nth-child(3)  {
+  animation-name: reveal;
+  animation-delay: 200ms;
+  margin-left: .5rem;
+}
+
+.menu li:nth-child(4)  {
+  animation-name: reveal;
+  animation-delay: 200ms;
+}
+
+
+
 @keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+
+
+.slide-in p {
+  animation-name: reveal-up;
+  animation-duration: 1400ms;
+  animation-iteration-count: 1;
+  transition-timing-function: ease-out;
+}
+
+.slide-in p:nth-child(1)  {
+  animation-name: reveal-up;
+}
+
+.slide-in p:nth-child(2)  {
+  animation-name: reveal-up;
+}
+
+@keyframes reveal-up {
   0% {
     opacity: 0;
     transform: translateY(2rem);
   }
 
+  60% {
+    opacity: 0;
+    transform: translateY(1.1rem);
+  }
+
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0rem);
   }
 }
-
-
-.first {
-  animation-delay: 0s;
-}
-.second {
-  animation-delay: 200ms;
-}
-.third {
-  animation-delay: 400ms;
-}
-
-
-
 
 
 
